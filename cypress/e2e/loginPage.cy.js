@@ -1,9 +1,9 @@
-import homePage from '../../pages/homePage'
-import loginPage from '../../pages/loginPage' 
+import homePage from '../pages/homePage'
+import loginPage from '../pages/loginPage' 
 
 const home = new homePage
 const login = new loginPage
-const data = require('../../fixtures/login.json')
+const data = require('../fixtures/login.json')
 
 describe('Testing login of the-internet.herokuapp', () => {
 
