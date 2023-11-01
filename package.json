@@ -1,0 +1,22 @@
+{
+  "name": "cypress-the-internet.herokuapp",
+  "version": "1.0.0",
+  "description": "Testing the internet herokuapp with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibanezmartha9/Cypress-the-internet.herokuapp.git"
+  },
+  "author": "Martha Ibañez and Diego Corredor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibanezmartha9/Cypress-the-internet.herokuapp/issues"
+  },
+  "homepage": "https://github.com/ibanezmartha9/Cypress-the-internet.herokuapp#readme",
+  "devDependencies": {
+    "cypress": "^13.4.0"
+  }
+}
