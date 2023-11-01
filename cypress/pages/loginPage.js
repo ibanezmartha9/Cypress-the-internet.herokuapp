@@ -14,16 +14,8 @@ class loginPage {
        return cy.get('.fa')
     }
 
-    invalidUserErrorMessage(){
-        return cy.contains('Your username is invalid')
-    }
-
-    invalidPasswordErrorMessage(){
-        return cy.contains('Your password is invalid')
-    }
-
-    validUserAndPassword(){
-        return cy.contains('You logged into a secure area')
+    loginMessage(){
+        return cy.get('#flash')
     }
 }
 

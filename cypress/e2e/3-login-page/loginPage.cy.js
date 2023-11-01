@@ -3,38 +3,23 @@ import loginPage from '../../pages/loginPage'
 
 const home = new homePage
 const login = new loginPage
+const data = require('../../fixtures/login.json')
 
 describe('Testing login of the-internet.herokuapp', () => {
 
     beforeEach(() => {
         home.navigateToHomePage()
-        cy.fixture('login.json').then(function(loginData){
-            this.loginData = loginData
+        home.navigatetoLoginPage().click()
+    })
+
+    data.forEach((data) => { 
+        it('Validate when the user is '+data.user+' the message is '+data.message+'', function () {       
+            login.userNameField().type(data.user)  
+            login.passwordField().type(data.password)   
+            login.loginButton().click()
+            login.loginMessage().should('include.text', data.message)
         })
+
     })
 
-    it('Username is invalid', function () {
-        home.navigatetoLoginPage().click()
-        login.userNameField().type(this.loginData.invalidUser)  
-        login.passwordField().type(this.loginData.validpassword)   
-        login.loginButton().click()
-        login.invalidUserErrorMessage().should('exist')
-    })
-
-    
-    it('Password is invalid', function () {
-        home.navigatetoLoginPage().click()
-        login.userNameField().type(this.loginData.validUser)  
-        login.passwordField().type(this.loginData.invalidPassword)   
-        login.loginButton().click()
-        login.invalidPasswordErrorMessage().should('exist')
-    })
-
-    it('User and password are valid', function () {
-        home.navigatetoLoginPage().click()
-        login.userNameField().type(this.loginData.validUser)  
-        login.passwordField().type(this.loginData.validpassword)   
-        login.loginButton().click()
-        login.validUserAndPassword().should('exist')
-    })
 }) 
