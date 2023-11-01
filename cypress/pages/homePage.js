@@ -11,9 +11,8 @@ class homePage {
         return cy.get(':nth-child(21) > a')
     }
 
-    //Actions
-    closeWindow(){
-        window.close()
+    navigateToCheckboxesPage(){
+        return cy.get(':nth-child(6) > a')
     }
 
 }
