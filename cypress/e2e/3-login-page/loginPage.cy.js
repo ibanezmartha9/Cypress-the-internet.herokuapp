@@ -19,7 +19,6 @@ describe('Testing login of the-internet.herokuapp', () => {
             login.loginButton().click()
             login.loginMessage().should('include.text', data.message)
         })
-
     })
-
+   
 }) 
