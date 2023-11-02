@@ -10,12 +10,6 @@ class homePage {
     navigatetoLoginPage(){
         return cy.get(':nth-child(21) > a')
     }
-
-    //Actions
-    closeWindow(){
-        window.close()
-    }
-
 }
 
 export default homePage
