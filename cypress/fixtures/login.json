@@ -1,0 +1,31 @@
+    
+    [
+        {
+            "user": "test",
+            "password": "test",
+            "message" : "Your username is invalid!"
+        }, 
+
+        {
+
+        "user": "test",
+        "password": "SuperSecretPassword!",
+        "message" : "Your username is invalid!"
+
+        },
+
+        {
+            "user": "tomsmith",
+            "password": "test",
+            "message" : "Your password is invalid!"
+        },  
+        
+        {
+            "user": "tomsmith",
+            "password": "SuperSecretPassword!",
+            "message" : "You logged into a secure area!"  
+        }
+        
+    ]
+
+    
