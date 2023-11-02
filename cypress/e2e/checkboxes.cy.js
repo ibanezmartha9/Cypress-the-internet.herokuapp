@@ -9,9 +9,9 @@ describe('Working with checkboxes', () => {
     it('Select the checkboxes in a page', () => {
         home.navigateToHomePage()
         home.navigateToCheckboxesPage().click()
-        checkboxes.secondChekbox().uncheck()
-        checkboxes.firstCheckbox().check()
-        checkboxes.secondChekbox().check()
+        checkboxes.secondChekbox().uncheck().should('not.to.be.checked')
+        checkboxes.firstCheckbox().check().should('be.checked')
+        checkboxes.secondChekbox().check().should('be.checked')
     })
 
 })
