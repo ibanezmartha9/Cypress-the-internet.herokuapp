@@ -14,7 +14,6 @@ class homePage {
     navigateToCheckboxesPage(){
         return cy.get(':nth-child(6) > a')
     }
-
 }
 
 export default homePage
