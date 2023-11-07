@@ -2,12 +2,12 @@ class addRemoveElements{
 
     //Locators 
 
-    verifyAddRemoveElementsTitle(){
-        return cy.contains('Add/Remove Elements')
+    addRemoveElementsTitle(){
+        return cy.get('h3')
     }
 
     addElementButton(){
-        return cy.contains('Add/Remove Elements')
+        return cy.contains('Add Element')
     }
 
     deletebutton(){
