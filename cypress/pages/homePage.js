@@ -11,15 +11,9 @@ class homePage {
         return cy.get(':nth-child(21) > a')
     }
 
-    NavigateToAddAndRemoveElements(){
-        return cy.get('ul > :nth-child(2) > a')
+    navigateToCheckboxesPage(){
+        return cy.get(':nth-child(6) > a')
     }
-
-    //Actions
-    closeWindow(){
-        window.close()
-    }
-
 }
 
 export default homePage
