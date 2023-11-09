@@ -17,6 +17,10 @@ class homePage {
 
     navigateToContextMenu(){
         return cy.get('//*[@id="content"]/ul/li[7]/a')
+    }    
+    
+    NavigateToAddAndRemoveElements(){
+        return cy.get('ul > :nth-child(2) > a')
     }
 }
 
